@@ -14,11 +14,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/daniellecroxton/rt_top_100"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.files         = ["bin/rt-top-100", "lib/rt_top_100.rb", "lib/rt_top_100/cli.rb", "lib/rt_top_100/movie.rb", "lib/rt_top_100/scraper.rb", "lib/rt_top_100/version.rb"]
+  spec.bindir        = "bin"
+  spec.executables   = ["rt-top-100"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.15"
