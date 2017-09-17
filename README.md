@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-```$ rt_top_100```
+```$ rt-top-100```
 
 Follow the prompts to indicate which portion of Rotten Tomatoes Top 100 Movies of All Time list you'd like to see. From within a list portion, you may choose a specific movie to see additional details. You can also use the main menu to view the methodology behind the list. Have fun exploring!
 
